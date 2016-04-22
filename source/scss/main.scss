@@ -1,0 +1,37 @@
+/* VENDOR - Default fall-backs and external files. */
+
+
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+
+@import 'base/_reset.scss';
+@import 'base/_variables.scss';
+@import 'base/_helpers.scss';
+@import 'base/_typography.scss';
+/*@import 'base/_mixins.scss';*/
+/*@import 'base/_placeholders.scss';*/
+
+
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+
+/*@import 'framework/_grid.scss';*/
+/*@import 'framework/_breakpoints.scss';*/
+/*@import 'framework/_layout.scss';*/
+
+
+/* MODULES - Re-usable site elements.
+========================================================================== */ 
+
+@import 'components/_divider.scss';
+@import 'components/_navigation.scss';
+@import 'components/_hero.scss';
+/*@import 'components/_links.scss';*/
+/*@import 'components/_button.scss';*/
+/*@import 'components/_input.scss';*/
+
+
+/* Shame - When you're not sure where to put your classes. 
+    You can temporarily put it here and then decide later.
+========================================================================== */ 
+@import '_shame.scss';

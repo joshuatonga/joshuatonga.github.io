@@ -1,0 +1,70 @@
+@import '../base/_variables.scss';
+
+.header {
+  min-height: 600px;
+}
+
+
+.skills {
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 50px;
+
+    &__inner {
+      width: 40%;
+    }
+
+    &__inner + &__inner {
+      margin-left: 100px;
+    }
+  }
+
+
+  &__skill {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__title { min-width: 100px;
+      text-align: left;
+    }
+
+    &__bar {
+      background-color: $color-primary;
+      text-align: right;
+
+      margin-left: 30px;
+      padding: 0 20px;
+      border-radius: 100px;
+
+
+      &.experienced {
+        width: 300px;
+      }
+
+      &.pretty-good {
+        width: 250px;
+      }
+
+      &.good {
+        width: 200px;
+      }
+
+      &.rookie {
+        width: 150px;
+      }
+    }
+  }
+
+  &__skill + &__skill {
+    margin-top: 10px;
+  }
+}

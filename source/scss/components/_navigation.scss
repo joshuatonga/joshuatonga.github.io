@@ -1,0 +1,39 @@
+@import '../base/_variables.scss';
+
+.nav {
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+
+  justify-content: center;
+  align-items: center;
+
+
+  &__list {
+    list-style: none;
+
+    
+    &__item {
+      display: inline;
+    }
+
+    &__item + &__item {
+      margin-left: 30px;
+    }
+
+
+    &__link {
+      color: $color-default-alt;
+
+      transition: all 150ms ease-in;
+    }
+
+    &__link:hover {
+      color: $color-primary;
+    }
+
+    &__link:active {
+      color: darken($color-primary, 10%);
+    }
+  }
+}

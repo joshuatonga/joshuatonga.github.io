@@ -1,0 +1,52 @@
+@import '_variables.scss';
+
+html {
+  font-size: $font-normal-size;
+}
+
+body {
+  background-color: white;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  line-height: 1.500em;
+  color: $color-default;
+}
+
+/*p {*/
+  /*margin-bottom: 1.3em;*/
+  /*margin-bottom: 50px;*/
+/*}*/
+
+/*h1, h2, h3, h4 {*/
+  /*margin: 1.414em 0 0.5em;*/
+  /*font-weight: inherit;*/
+  /*line-height: 1.2;*/
+/*}*/
+
+h1, 
+h2, 
+h3, 
+h4 {
+  color: $white;
+}
+
+h1 {
+  font-size: $h1-size;
+}
+
+h2 {
+  font-size: $h2-size;
+}
+
+h3 {
+  font-size: $h3-size;
+}
+
+h4 {
+  font-size: $h4-size;
+}
+
+small, 
+.font_small {
+  font-size: $font-small-size;
+}

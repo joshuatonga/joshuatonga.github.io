@@ -1,0 +1,45 @@
+/* 
+ * Grid
+ */
+
+.container {
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+.breath {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.breath--50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+/* 
+ * Typograhy
+ */
+
+.color--primary {
+  color: $color-primary;
+}
+
+.color--default {
+  color: $color-default;
+}
+
+.h2--size {
+  font-size: $h2-size;
+}
+
+.bold {
+  font-weight: bold;
+}
