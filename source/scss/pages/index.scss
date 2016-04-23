@@ -119,6 +119,11 @@
       margin-bottom: 50px;
     }
 
+    &__coming-soon {
+      font-size: 5em;
+      padding: 100px 0;
+    }
+
     &.show {
       display: flex;
     }
@@ -154,6 +159,7 @@
       background-color: $color-default;
     }
   }
+
 }
 
 
@@ -187,6 +193,11 @@
     p {
       font-family: $font-family-secondary;
       font-style: italic;
+    }
+
+    &__coming-soon {
+      font-size: 5em;
+      padding: 100px 0;
     }
 
     p + p {
