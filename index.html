@@ -10,6 +10,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css">
   <link rel="stylesheet" href="public/stylesheets/main.css">
   <link rel="stylesheet" href="public/stylesheets/pages/index.css">
 </head>
@@ -402,20 +403,25 @@
   <section id="contact" class="contact center breath">
     <h2 class="contact__title bold center">Let&#39;s talk</h2>
 
-    <a class="btn btn--big text--uppercase" href="mailto:hellojoshuatonga@gmail.com">
+    <a 
+      class="btn btn--big text--uppercase tooltip" 
+      href="mailto:hellojoshuatonga@gmail.com"
+      title="Email me at hellojoshuatonga@gmail.com"
+      >
       <i class="fa fa-envelope-o fa-icon--left"></i>
       Message me
     </a>
 
     <div class="contact__accounts">
-      <a class="contact__accounts__account" href="https://github.com/hellojoshuatonga"><i class="fa fa-github"></i></a>
-      <a class="contact__accounts__account" href="https://plus.google.com/112933305730117402291"><i class="fa fa-google-plus"></i></a>
-      <a class="contact__accounts__account" href="https://twitter.com/imjoshuatonga"><i class="fa fa-twitter"></i></a>
-      <a class="contact__accounts__account" href="https://dribbble.com/hellojoshuatonga""><i class="fa fa-dribbble"></i></a>
+      <a class="contact__accounts__account" target="_blank" href="https://github.com/hellojoshuatonga"><i class="fa fa-github"></i></a>
+      <a class="contact__accounts__account" target="_blank" href="https://plus.google.com/112933305730117402291"><i class="fa fa-google-plus"></i></a>
+      <a class="contact__accounts__account" target="_blank" href="https://twitter.com/imjoshuatonga"><i class="fa fa-twitter"></i></a>
+      <a class="contact__accounts__account" target="_blank" href="https://dribbble.com/hellojoshuatonga""><i class="fa fa-dribbble"></i></a>
     </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
   <script src="public/javascripts/script.js"></script>
 </body>

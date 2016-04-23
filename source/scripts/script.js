@@ -9,6 +9,11 @@
     // Add smoothscroll
     $('a').smoothScroll();
 
+    // Add tooltiptser
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-kq',
+    });
+
 
     // Reference for the slider: http://codepen.io/jurbank/pen/AckDb?editors=0010
 
