@@ -1,0 +1,25 @@
+@import '../base/_variables.scss';
+
+.btn {
+  padding: 10px 25px;
+
+  border: 3px solid $color-primary;
+  border-radius: 100px;
+
+  background-color: $color-primary;
+  color: $color-default;
+
+  transition: all 150ms ease-in;
+}
+
+.btn--secondary {
+  background-color: transparent;
+
+  &:hover {
+    color: $color-default-alt;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+}

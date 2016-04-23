@@ -1,8 +1,11 @@
 @import '../base/_variables.scss';
 
+
+
 .header {
   min-height: 600px;
 }
+
 
 
 .skills {
@@ -67,4 +70,175 @@
   &__skill + &__skill {
     margin-top: 10px;
   }
+}
+
+
+
+.services {
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    width: 30%;
+  }
+}
+
+
+
+.works {
+  &__slides {
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  &__work {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: relative;
+    right: -9999px;
+
+    transition: all 300ms ease-in-out;
+
+    &__left {
+      width: 50%;
+    }
+
+    &__right {
+      width: 40%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__desc {
+      margin-bottom: 50px;
+    }
+
+    &.show {
+      display: flex;
+    }
+
+    &.active {
+      right: 0;
+    }
+
+  }
+
+
+  &__slides-nav {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+
+    &__bullet {
+      width: 15px;
+      height: 15px;
+
+      border: 3px solid $color-default;
+      border-radius: 50%;
+
+      cursor: pointer;
+    }
+
+    &__bullet + &__bullet {
+      margin-left: 20px;
+    }
+
+    &__bullet.active {
+      background-color: $color-default;
+    }
+  }
+}
+
+
+
+.testimonials {
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__quotes-img {
+    width: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  &__slides {
+    overflow: hidden;
+  }
+
+  &__testimonial {
+    width: 50%;
+
+    display: none;
+    
+    position: relative;
+    right: -9999px;
+
+    transition: all 300ms ease-in-out;
+
+    p {
+      font-family: $font-family-secondary;
+      font-style: italic;
+    }
+
+    p + p {
+      margin-top: 24px;
+    }
+
+    &.show {
+      display: block;
+    }
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  &__company-name {
+    display: block;
+
+    font-family: $font-family-primary;
+    font-style: normal;
+
+    margin-bottom: 20px;
+  }
+
+  &__company-logo {
+    width: 30%;
+  }
+
+
+  &__slides-nav {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+
+    &__bullet {
+      width: 15px;
+      height: 15px;
+
+      border: 3px solid $color-default;
+      border-radius: 50%;
+
+      cursor: pointer;
+    }
+
+    &__bullet + &__bullet {
+      margin-left: 20px;
+    }
+
+    &__bullet.active {
+      background-color: $color-default;
+    }
+  }
+
 }
