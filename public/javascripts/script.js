@@ -6,8 +6,11 @@
 })(function($, window, document) {
   $(function() {
 
+    // Add smoothscroll
+    $('a').smoothScroll();
+
+
     // Reference for the slider: http://codepen.io/jurbank/pen/AckDb?editors=0010
-    
 
     // Slider for works
     var $worksSliderContainer = $('.works__slides');
