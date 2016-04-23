@@ -13,6 +13,9 @@
     $('.tooltip').tooltipster({
       theme: 'tooltipster-kq',
     });
+    
+    // Add fastclick
+    FastClick.attach(document.body);
 
 
     // Reference for the slider: http://codepen.io/jurbank/pen/AckDb?editors=0010
