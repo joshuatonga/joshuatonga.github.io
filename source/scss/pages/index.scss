@@ -242,3 +242,35 @@
   }
 
 }
+
+
+
+.contact {
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__accounts {
+    margin-top: 40px;
+
+    &__account {
+      color: $color-default;
+      font-size: 3em;
+
+      transition: all 150ms ease-in;
+    }
+
+    &__account:hover {
+      color: $color-primary;
+    }
+
+    &__account:active {
+      color: darken($color-primary, 5%);
+    }
+
+    &__account + &__account {
+      margin-left: 30px;
+    }
+  }
+}

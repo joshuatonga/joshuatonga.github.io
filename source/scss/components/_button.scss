@@ -10,8 +10,20 @@
   color: $color-default;
 
   transition: all 150ms ease-in;
+
+  &:hover {
+    color: $color-default-alt;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
 }
 
+
+/*
+ * Types
+ */
 .btn--secondary {
   background-color: transparent;
 
@@ -21,5 +33,19 @@
 
   &:active {
     background-color: $color-primary;
+  }
+}
+
+
+/*
+ * Sizes
+ */
+.btn--big {
+  padding: 15px 30px;
+
+  font-size: 1.2em;
+
+  i.fa {
+    font-size: 1.2em;
   }
 }
