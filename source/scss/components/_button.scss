@@ -18,34 +18,44 @@
   &:active {
     background-color: transparent;
   }
-}
 
+  /*
+   * Types
+   */
+  &.btn--secondary {
+    background-color: transparent;
 
-/*
- * Types
- */
-.btn--secondary {
-  background-color: transparent;
+    &:hover {
+      color: $color-default-alt;
+    }
 
-  &:hover {
-    color: $color-default-alt;
+    &:active {
+      background-color: $color-primary;
+    }
   }
 
-  &:active {
-    background-color: $color-primary;
-  }
-}
 
+  /*
+   * Sizes
+   */
+  &.btn--big {
+    padding: 15px 30px;
 
-/*
- * Sizes
- */
-.btn--big {
-  padding: 15px 30px;
-
-  font-size: 1.2em;
-
-  i.fa {
     font-size: 1.2em;
+
+    i.fa {
+      font-size: 1.2em;
+    }
+  }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    padding: 10px 20px;
+
+    &.btn--big {
+      padding: 10px 25px;
+    }
   }
 }
+
+

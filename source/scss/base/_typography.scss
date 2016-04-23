@@ -2,6 +2,10 @@
 
 html {
   font-size: $font-normal-size;
+
+  @media screen and (max-width: $bp-phone-large) {
+    font-size: 0.8em;
+  }
 }
 
 body {

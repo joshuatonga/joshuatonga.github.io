@@ -13,4 +13,13 @@
     line-height: 16px;
     padding: 10px 25px;
   }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+
+    .tooltipster-content {
+      padding: 10px;
+      text-align: center;
+    }
+  }
 }

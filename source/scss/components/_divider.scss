@@ -1,3 +1,5 @@
+@import '../base/_variables.scss';
+
 .divider {
   max-width: 480px;
 
@@ -6,5 +8,10 @@
     height: 1px;
     opacity: 0.3;
     background-image: linear-gradient(to left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    max-width: 60%;
   }
 }

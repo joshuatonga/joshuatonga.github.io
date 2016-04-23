@@ -9,7 +9,6 @@
 
 
 .skills {
-
   &__title {
     margin-bottom: 40px;
   }
@@ -70,6 +69,62 @@
   &__skill + &__skill {
     margin-top: 10px;
   }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    /* graph */
+    &__graph {
+      flex-direction: column;
+
+      margin-top: 30px;
+    }
+
+    &__graph__inner {
+      width: 100%;
+    }
+
+    &__graph__inner + &__graph__inner {
+      margin-left: 0;
+      margin-top: 50px;
+    }
+
+
+    /* skill */
+    &__skill {
+      flex-direction: column;
+    }
+
+    &__skill__title {
+      text-align: center;
+      min-width: inherit;
+      margin-bottom: 3px;
+    }
+
+    &__skill__bar {
+      margin-left: 0;
+
+      &.experienced {
+        width: 200px;
+      }
+
+      &.pretty-good {
+        width: 150px;
+      }
+
+      &.good {
+        width: 100px;
+      }
+
+      &.rookie {
+        width: inherit;
+      }
+    }
+
+  }
 }
 
 
@@ -82,6 +137,13 @@
 
   &__image {
     width: 30%;
+  }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    &__image {
+      width: 70%;
+    }
   }
 }
 
@@ -160,6 +222,40 @@
     }
   }
 
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    &__slides {
+      margin-top: 30px;
+      overflow: inherit;
+    }
+
+
+    /* work */
+    &__work {
+      flex-direction: column;
+    }
+
+    &__work__coming-soon {
+      font-size: 2em;
+      padding: 30px 0;
+    }
+
+    &__work__left {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    &__work__right {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__work__desc {
+      margin-bottom: 40px;
+    }
+
+  }
 }
 
 
@@ -252,6 +348,30 @@
     }
   }
 
+
+  @media screen and (max-width: $bp-phone-large) {
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__quotes-img {
+      width: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__testimonial {
+      width: 100%;
+    }
+
+    &__testimonial__coming-soon {
+      font-size: 2em;
+      padding: 30px 0;
+    }
+
+    &__company-logo {
+      width: 50%;
+    }
+  }
 }
 
 
@@ -282,6 +402,18 @@
 
     &__account + &__account {
       margin-left: 30px;
+    }
+  }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__accounts__account {
+      font-size: 2em;
     }
   }
 }

@@ -35,7 +35,6 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
->>>>>>> e31d964e2899061d7b00c524b9ca05d9e14d9d4b
 
 
 *.swp

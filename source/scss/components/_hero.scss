@@ -1,3 +1,5 @@
+@import '../base/_variables.scss';
+
 .hero {
   display: flex;
   justify-content: space-around;
@@ -17,6 +19,19 @@
 
     p + p {
       margin-top: 1.875em; // 30px;
+    }
+  }
+
+
+  @media screen and (max-width: $bp-phone-large) {
+    flex-direction: column;
+
+    &__description {
+      max-width: 100%;
+    }
+
+    &__image {
+      max-width: 150px;
     }
   }
 }
