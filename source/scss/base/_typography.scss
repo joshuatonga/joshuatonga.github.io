@@ -3,7 +3,7 @@
 html {
   font-size: $font-normal-size;
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
     font-size: 0.8em;
   }
 }

@@ -23,7 +23,7 @@
   }
 
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
     flex-direction: column;
 
     &__description {

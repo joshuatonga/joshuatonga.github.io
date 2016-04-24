@@ -49,19 +49,19 @@
 
 
       &.experienced {
-        width: 300px;
+        width: 70%;
       }
 
       &.pretty-good {
-        width: 250px;
+        width: 50%;
       }
 
       &.good {
-        width: 200px;
+        width: 30%;
       }
 
       &.rookie {
-        width: 150px;
+        width: 25%;
       }
     }
   }
@@ -71,7 +71,7 @@
   }
 
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
     &__title {
       margin-bottom: 20px;
     }
@@ -107,21 +107,21 @@
     &__skill__bar {
       margin-left: 0;
 
-      &.experienced {
-        width: 200px;
-      }
+      /*&.experienced {*/
+        /*width: 200px;*/
+      /*}*/
 
-      &.pretty-good {
-        width: 150px;
-      }
+      /*&.pretty-good {*/
+        /*width: 150px;*/
+      /*}*/
 
-      &.good {
-        width: 100px;
-      }
+      /*&.good {*/
+        /*width: 100px;*/
+      /*}*/
 
-      &.rookie {
-        width: inherit;
-      }
+      /*&.rookie {*/
+        /*width: inherit;*/
+      /*}*/
     }
 
   }
@@ -130,19 +130,61 @@
 
 
 .services {
-
   &__title {
     margin-bottom: 30px;
   }
 
-  &__image {
-    width: 30%;
+  &__amp {
+    width: initial !important;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    h1 {
+      color: $color-primary;
+    }
+  }
+
+  &__services-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__service {
+    width: 15%;
+    text-align: center;
+  }
+
+  &__service + &__service {
+    margin-left: 20px;
   }
 
 
-  @media screen and (max-width: $bp-phone-large) {
-    &__image {
-      width: 70%;
+  @media screen and (max-width: $bp-tablet) {
+    &__amp {
+      display: none;
+    }
+
+    &__services-flex {
+      flex-direction: column;
+    }
+
+    &__service {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__service + &__service {
+      margin-left: auto;
+      margin-top: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: $bp-phone-large) and (max-width: $bp-tablet) {
+    &__service {
+      width: 30%;
     }
   }
 }
@@ -224,7 +266,7 @@
 
 
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
     &__slides {
       margin-top: 30px;
       overflow: inherit;
@@ -349,7 +391,7 @@
   }
 
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
     &__title {
       margin-bottom: 30px;
     }
@@ -370,6 +412,12 @@
 
     &__company-logo {
       width: 50%;
+    }
+  }
+
+  @media screen and (min-width: $bp-phone-large) and (max-width: $bp-tablet) {
+    &__company-logo {
+      width: 35%;
     }
   }
 }
@@ -405,7 +453,7 @@
   }
 
 
-  @media screen and (max-width: $bp-phone-large) {
+  @media screen and (max-width: $bp-tablet) {
 
     &__title {
       margin-bottom: 50px;
