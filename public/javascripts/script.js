@@ -1,1 +1,85 @@
-!function(s){s(window.jQuery,window,document)}(function(s,t,e){s(function(){s("a").smoothScroll(),s(".tooltip").tooltipster({theme:"tooltipster-kq"}),FastClick.attach(e.body);var t=s(".works__slides"),i=t.find(".works__work"),o=s(".works__slides-nav__bullet"),a=0;o.on("click",function(){var t=o.index(s(this));a=t,o.removeClass("active"),o.eq(a).addClass("active"),i.removeClass("show active"),i.eq(a).addClass("show"),setTimeout(function(){i.eq(a).addClass("active")},10)});var l=s(".testimonials__slides"),n=l.find(".testimonials__testimonial"),d=s(".testimonials__slides-nav__bullet"),c=0;d.on("click",function(){var t=d.index(s(this));c=t,d.removeClass("active"),d.eq(c).addClass("active"),n.removeClass("show active"),n.eq(c).addClass("show"),setTimeout(function(){n.eq(c).addClass("active")},10)})})});
+/*
+ * IIFE in es6
+ * */
+(function(code) {
+  code(window.jQuery, window, document);
+})(function($, window, document) {
+  $(function() {
+
+    // Add smoothscroll
+    $('a').smoothScroll();
+
+    // Add tooltiptser
+    $('.tooltip').tooltipster({
+      theme: 'tooltipster-kq',
+    });
+    
+    // Add fastclick
+    FastClick.attach(document.body);
+
+
+    // Reference for the slider: http://codepen.io/jurbank/pen/AckDb?editors=0010
+
+    // Slider for works
+    var $worksSliderContainer = $('.works__slides');
+    var $workSlides = $worksSliderContainer.find('.works__work');
+    var $workBullets = $('.works__slides-nav__bullet');
+
+    var workCurrent = 0;
+
+
+    $workBullets.on('click',  function() {
+      // Get the index of the bullet clicked
+      var index = $workBullets.index($(this));
+
+      // Update the current index
+      workCurrent = index;
+
+      // First, remove the active class on the workBullets then add the active 
+      // class on the current index
+      $workBullets.removeClass('active');
+      $workBullets.eq(workCurrent).addClass('active');
+
+      // Show the slide of the current index
+      $workSlides.removeClass('show active');
+      $workSlides.eq(workCurrent).addClass('show');
+
+      setTimeout(function() {
+        $workSlides.eq(workCurrent).addClass('active');
+      }, 10)
+    });
+
+
+
+    // Slider for testimonials
+    var $testimonialsSlidesCont = $('.testimonials__slides');
+    var $testimonialSlides = $testimonialsSlidesCont.find('.testimonials__testimonial');
+    var $testimonialBullets = $('.testimonials__slides-nav__bullet');
+
+    var testimonialCurrent = 0;
+
+
+    $testimonialBullets.on('click',  function() {
+      // Get the index of the bullet clicked
+      var index = $testimonialBullets.index($(this));
+
+      // Update the current index
+      testimonialCurrent = index;
+
+      // First, remove the active class on the testimonialBullets then add the active 
+      // class on the current index
+      $testimonialBullets.removeClass('active');
+      $testimonialBullets.eq(testimonialCurrent).addClass('active');
+
+      // Show the slide of the current index
+      $testimonialSlides.removeClass('show active');
+      $testimonialSlides.eq(testimonialCurrent).addClass('show');
+
+      setTimeout(function() {
+        $testimonialSlides.eq(testimonialCurrent).addClass('active');
+      }, 10)
+    });
+
+
+  }); // end of document.ready
+});
